@@ -1,20 +1,24 @@
 import React from 'react';
 import './styles.css';
 import {Link} from "react-router-dom";
-const Login = () => {
+const SignUp = () => {
   return (
     <div>
-        <div className='login'>
+        <div className='signUp'>
             <div className='title'>
               <h1 className='blog-name'>Runo</h1>
               <div className='line'/>
             </div>
-            <div className='login-form'>
+            <div className='signUp-form'>
                 <form action="">
-                    <p>Bienvenido de nuevo</p>
-                    <h2 style={{marginBottom:'30px'}}>Iniciar sesión en su cuenta</h2>
+                    <p>Bienvenido</p>
+                    <h2 style={{marginBottom:'30px'}}>Regístrese en su cuenta</h2>
                     <div>
                     <div className='container-input' style={{marginBottom:'20px'}}>
+                      <p className='label-input'>Usuario</p>
+                      <input className='form-input' type="text"/>
+                    </div>
+                     <div className='container-input' style={{marginBottom:'20px'}}>
                       <p className='label-input'>Correo</p>
                       <input className='form-input' type="email"/>
                     </div>
@@ -23,14 +27,17 @@ const Login = () => {
                         <input className='form-input' type="password"/>
                     </div>
                     </div>
-                     <button className='btn-login' type="submit">Login</button>
+                    <div style={{display:'flex',justifyContent:'center'}}>
+                     <button className='btn-signUp' type="submit">Registrarse</button>
+                     </div>
                 </form>
                 <div className='sign-in'>
-                  <p >¿No tienes una cuenta?<span><Link to="/signUp">Registrate</Link> </span></p>
+                  <p >¿Ya tienes una cuenta?<span><Link to="/login">Inicie sesión en su cuenta</Link></span></p>
                 </div>
             </div>
         </div>
     </div>
   )
 }
-export default Login;
+
+export default SignUp;
