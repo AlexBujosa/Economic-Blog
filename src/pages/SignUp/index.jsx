@@ -12,7 +12,7 @@ const SignUp = () => {
             <div className='signUp-form'>
                 <form action="">
                     <p>Bienvenido</p>
-                    <h2 style={{marginBottom:'30px'}}>Regístrese en su cuenta</h2>
+                    <h2 style={{marginBottom:'30px'}}>Regístrese su cuenta</h2>
                     <div>
                     <div className='container-input' style={{marginBottom:'20px'}}>
                       <p className='label-input'>Usuario</p>
