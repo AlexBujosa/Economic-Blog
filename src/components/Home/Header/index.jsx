@@ -1,17 +1,23 @@
 import React from 'react';
+import NavBar from '../NavBar';
 import './styles.css';
 
-const Header = () => (
-  <header className='home-header'>
-    <h2>Inc. This Morning</h2>
-    <h1>
-      <span>“</span> Blog <span>”</span>
-    </h1>
-    <p>
-      awesome place to make oneself <br /> productive and entertained through
-      daily updates.
-    </p>
-  </header>
-);
+const Header = () => {
+
+  return(
+    <div style={{height: '97vh'}}>
+        <header className='home-header'>
+
+          <NavBar/>
+          <div className='bg'>
+
+          </div>
+        </header>
+    </div>
+  )
+  
+  
+  
+};
 
 export default Header;

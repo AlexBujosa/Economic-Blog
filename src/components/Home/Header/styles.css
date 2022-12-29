@@ -1,5 +1,9 @@
 .home-header {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 97vh;
+  top: 0;
 }
 
 .home-header h2 {
@@ -20,4 +24,14 @@
 .home-header p {
   color: #a9a9a9;
   font-weight: 500;
+}
+
+.bg {
+  width: 100%;
+  height: 97vh;
+  position: absolute;
+  background-image: url('../../../assets/economic.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
 }

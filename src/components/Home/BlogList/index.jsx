@@ -9,14 +9,14 @@ const BlogList = ({ blogs }) => {
     'All',
     'Mercado Financiero',
     'Global',
-    'Politicas Económicas',
+    'Políticas Económicas',
     'Finanzas',
     'Turismo'
   ]
 
   return (
-    <div>
-      <b>Popular Topics</b>
+    <div style={{marginTop: 120}}>
+      <b style={{fontSize: '26px'}}>Popular Topics</b>
       <br/>
       <br/>
       <ul>
@@ -28,9 +28,12 @@ const BlogList = ({ blogs }) => {
       </ul>
       <br/>
       <div className='blogList-wrap'>
-        {blogs.map((blog) => (
-          <BlogItem blog={blog} />
-        ))}
+        {blogs.map((blog)  => {
+          if(currentMenu === 'All' || blog.category === currentMenu){
+           return <BlogItem blog={blog} />
+          }
+        }
+        )}
       </div>
     </div>
     

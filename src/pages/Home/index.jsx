@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import EmptyList from '../../components/common/EmptyList';
 import BlogList from '../../components/Home/BlogList';
+import CoverImage from '../../components/Home/CoverImage';
+import Footer from '../../components/Home/Footer';
 import Header from '../../components/Home/Header';
-import SearchBar from '../../components/Home/SearchBar';
+//import SearchBar from '../../components/Home/SearchBar';
 import { blogList } from '../../config/data';
 
 const Home = () => {
@@ -31,20 +33,29 @@ const Home = () => {
   };
 
   return (
-    <div className='container'>
+    <div>
       {/* Page Header */}
       <Header />
 
-      {/* Search Bar */}
-      <SearchBar
-        value={searchKey}
-        clearSearch={handleClearSearch}
-        formSubmit={handleSearchBar}
-        handleSearchKey={(e) => setSearchKey(e.target.value)}
-      />
+      {/* Search Bar 
+        <SearchBar
+          value={searchKey}
+          clearSearch={handleClearSearch}
+          formSubmit={handleSearchBar}
+          handleSearchKey={(e) => setSearchKey(e.target.value)}
+        />
+      
+      */}
+      
 
       {/* Blog List & Empty View */}
+      <div className='container'>
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
+      </div>
+      {/* Secondary Image */}
+      <CoverImage/>
+      {/*Footer */}
+      <Footer/>
     </div>
   );
 };

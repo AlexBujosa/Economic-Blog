@@ -1,0 +1,34 @@
+.navbar {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar b {
+    margin-left: 1em;
+}
+
+.navbar ul {
+    margin: auto 1em auto auto;
+}
+
+.navbar li {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.line-navbar {
+    width: 1px;
+    height: 22px;
+    border: 1px solid white;
+}
+
+.underline {
+    border-bottom: 1px solid orange;
+}

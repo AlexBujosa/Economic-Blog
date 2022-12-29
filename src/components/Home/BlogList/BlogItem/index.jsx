@@ -17,21 +17,15 @@ const BlogItem = ({
 }) => {
   return (
     <div className='blogItem-wrap'>
-      <Link className='blogItem-link' to={`/blog/${id}`}>
-        <img className='blogItem-cover' src={cover} alt='cover' />
-      </Link>
-      <Chip label={category} />
-      <h3>{title}</h3>
+      <div className='blogItem-image-container'>
+        <Link className='blogItem-link' to={`/blog/${id}`} style={{position:'relative'}}>
+          <Chip label={category} margin={'right-top'}/>
+          <img className='blogItem-cover' src={cover} alt='cover'/>
+        </Link>
+      </div>
+      <p className='blogItem-createdAt' >{createdAt}</p>
+      <h3 style={{zIndex: 1}}>{title}</h3>
       <p className='blogItem-desc'>{description}</p>
-      <footer>
-        <div className='blogItem-author'>
-          <img src={authorAvatar} alt='avatar' />
-          <div>
-            <h6>{authorName}</h6>
-            <p>{createdAt}</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
