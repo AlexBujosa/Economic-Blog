@@ -7,6 +7,7 @@
     z-index: 3;
     position: absolute;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar b {
@@ -21,6 +22,7 @@
     margin-left: 25px;
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .line-navbar {
