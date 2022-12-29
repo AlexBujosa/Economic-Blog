@@ -31,7 +31,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       {/* Page Header */}
       <Header />
 
