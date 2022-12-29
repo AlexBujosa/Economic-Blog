@@ -16,7 +16,7 @@ const BlogItem = ({
   },
 }) => {
   return (
-    <div className='blogItem-wrap' key={'blogItem-'+id}>
+    <div className='blogItem-wrap'>
       <div className='blogItem-image-container'>
         <Link className='blogItem-link' to={`/blog/${id}`} style={{position:'relative'}}>
           <Chip label={category} margin={'right-top'}/>
