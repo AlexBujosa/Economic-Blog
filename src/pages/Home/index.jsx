@@ -52,7 +52,7 @@ const Home = () => {
       <div className='container'>
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
       </div>
-      {/* Secondary Image */}
+      {/* Secondary Image <CoverImage/> */}
       <CoverImage/>
       {/*Footer */}
       <Footer/>

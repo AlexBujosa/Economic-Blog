@@ -30,7 +30,7 @@ const BlogList = ({ blogs }) => {
       <div className='blogList-wrap'>
         {blogs.map((blog)  => {
           if(currentMenu === 'All' || blog.category === currentMenu){
-           return <BlogItem blog={blog} />
+           return <BlogItem blog={blog}/>
           }
         }
         )}
