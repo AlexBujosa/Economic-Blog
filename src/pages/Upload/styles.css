@@ -105,8 +105,8 @@ margin-bottom: 20px;
 
 .upload-img{
     color: white;
-    background-color: #C4C4C4;;
-    padding: 8px 20px;
+    background-color: #C4C4C4;
+    padding: 2px 8px;
     border-radius: 8px;
     font-size: 30px;
     font-weight: bold;
@@ -114,6 +114,18 @@ margin-bottom: 20px;
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    
 
+}
+
+.select-container{
+    width: 230px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.container-options{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    
 }
