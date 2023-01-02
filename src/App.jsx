@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import  Login  from './pages/Login';
 import SignUp from './pages/SignUp';
 import About from './pages/About';
+import Upload from './pages/Upload';
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <div >
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/upload' exact component={Upload} />
         <Route path='/login' exact component={Login} />
         <Route path='/about' exact component={About} />
         <Route path='/signUp' exact component={SignUp} />
