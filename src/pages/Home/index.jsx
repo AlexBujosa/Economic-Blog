@@ -7,6 +7,13 @@ import Header from '../../components/Home/Header';
 //import SearchBar from '../../components/Home/SearchBar';
 import { blogList } from '../../config/data';
 
+const coverImageInfo = {
+  label: 'Economics',
+  title: 'Richird Norton photorealistic rendering as real photos',
+  discription: 'Pogressively incentivize cooperative systems through technicall sound functionalities. The credibly productivte seamless data.',
+  date: '08.08.10',
+  choose : 1
+}
 const Home = () => {
   const [blogs, setBlogs] = useState(blogList);
   const [searchKey, setSearchKey] = useState('');
@@ -53,7 +60,15 @@ const Home = () => {
       {!blogs.length ? <EmptyList /> : <BlogList blogs={blogs} />}
       </div>
       {/* Secondary Image <CoverImage/> */}
-      <CoverImage/>
+      <div style={{marginTop:40}}>
+        <CoverImage label={coverImageInfo.label} 
+        description={coverImageInfo.description}
+        title={coverImageInfo.title}
+        date={coverImageInfo.date}
+        choose={coverImageInfo.choose}
+        />
+      </div>
+      
       {/*Footer */}
       <Footer/>
     </div>

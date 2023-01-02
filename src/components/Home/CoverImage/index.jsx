@@ -1,24 +1,29 @@
 import Chip from "../../common/Chip";
-import './styles.css'
-const CoverImage = () => {
+import './styles.css';
+const CoverImage = ({label, title, description, date, choose} ) => {
     return(
-        <div style={{height: '100vh', marginTop:40, display:'flex'}}>
-            <div className='cover-image'></div>
+        <div style={{height: '100vh', display:'flex'}}>
+            {choose === 1 ? 
+            (
+                <div className='cover-image'></div>
+            ) : 
+            (
+                <div className='cover-image-2'></div>
+            )}
             <div className='cover'>
                 <div className="cover-economics">
-                    <Chip label={'Economics'} margin={'middle'}/>
+                    <Chip label={label} margin={'middle'}/>
                     <b>
                         <center>
-                            Richird Norton photorealistic rendering as real photos
+                           {title}
                         </center>
                     </b>
                     <p className='cover-description'>
-                        Pogressively incentivize cooperative systems through technicall
-                        sound functionalities. The credibly productivte seamless data.
+                        {description}
                     </p>
                     <div className='cover-line'></div>
                     <p className='cover-date'>
-                        08.08.10
+                        {date}
                     </p>
                 </div>
                 
