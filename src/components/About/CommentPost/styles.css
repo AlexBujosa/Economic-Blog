@@ -1,0 +1,22 @@
+.top {
+  display: flex !important;
+}
+
+h5,
+p,
+.like {
+  margin-left: 10px;
+}
+
+.dislike {
+  margin-left: 20px !important;
+}
+
+.dislike,
+.like {
+  margin-top: 10px !important;
+}
+
+.commentPost {
+  margin-top: 20px;
+}
