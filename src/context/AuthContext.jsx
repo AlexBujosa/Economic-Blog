@@ -15,10 +15,6 @@ export const AuthContextProvider = ({ children }) => {
         setAuthToken(accessToken);
         setAuthUsername(username);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 1830773d6904dee435f860b0645659f08dad0198
     useEffect(()=>{
         const accessToken = localStorage.getItem('authToken');
         const username = localStorage.getItem('username');
