@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import EmptyList from '../../components/common/EmptyList';
 import BlogList from '../../components/Home/BlogList';
 import CoverImage from '../../components/Home/CoverImage';
@@ -6,6 +6,7 @@ import Footer from '../../components/Home/Footer';
 import Header from '../../components/Home/Header';
 //import SearchBar from '../../components/Home/SearchBar';
 import { blogList } from '../../config/data';
+import { UserAuth } from '../../context/AuthContext';
 
 const coverImageInfo = {
   label: 'Economics',
@@ -39,6 +40,7 @@ const Home = () => {
     setSearchKey('');
   };
 
+  
   return (
     <div>
       {/* Page Header */}
