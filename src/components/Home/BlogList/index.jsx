@@ -28,9 +28,9 @@ const BlogList = ({ blogs }) => {
       </ul>
       <br/>
       <div className='blogList-wrap'>
-        {blogs.map((blog)  => {
+        {blogs.map((blog, index)  => {
           if(currentMenu === 'All' || blog.category === currentMenu){
-           return <BlogItem blog={blog}/>
+           return <BlogItem blog={blog} key={'BlogItem-'+index}/>
           }
         }
         )}

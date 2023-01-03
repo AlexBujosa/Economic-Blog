@@ -1,6 +1,7 @@
 import './styles.css';
 import {CiSearch} from 'react-icons/ci'
 import { Link } from 'react-router-dom';
+import { Logout } from '../../common/Logout/Logout';
 const NavBar = () =>{
     const currentURL = window.location.href;
     const urls = [
@@ -39,6 +40,7 @@ const NavBar = () =>{
                     )
                     
                 })}
+                <li onClick={()=>{Logout()}}>Log Out</li>
                 <li>
                     <div className='line-navbar'></div>
                 </li>
