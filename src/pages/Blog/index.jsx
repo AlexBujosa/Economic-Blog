@@ -39,18 +39,14 @@ const Blog = () => {
 				<div>
 					<NavBar />
 					<CoverImage
-						label={coverImageInfo.label}
-						description={coverImageInfo.discription}
-						title={coverImageInfo.title}
-						date={coverImageInfo.date}
+						label={blog.category}
+						description={blog.postedBy}
+						title={blog.title}
+						date={blog.created}
 						choose={coverImageInfo.choose}
+						image = {blog.cover}
 					/>
 					<div className="blog-wrap">
-						<header>
-							<p className="blog-date">Published {blog.createdAt}</p>
-							<h1>{blog.title}</h1>
-						</header>
-						<img src={blog.cover} alt="cover" />
 						<p style={{ whiteSpace: 'pre-line' }} className="blog-desc">
 							{blog.description}
 						</p>

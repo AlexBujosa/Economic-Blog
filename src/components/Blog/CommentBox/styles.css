@@ -5,7 +5,7 @@
   margin-left: 0px;
 }
 
-input {
+.commentBox input {
   margin-left: 10px;
   border-top: none;
   border-left: none;
@@ -15,13 +15,14 @@ input {
   width: 100%;
 }
 
-Button {
+.comment-side Button {
   margin-left: 85% !important;
-  border-radius: 20px !important;
+  border-radius: 15px !important;
   width: 120px !important;
+  margin-top: 5px;
 }
 
-hr {
+.comment-side hr {
   margin-top: 40px;
   border-top: 1px solid #e1e5ea;
   border-left: none;
@@ -29,10 +30,10 @@ hr {
   border-bottom: none;
 }
 
-Button:hover {
-  background-color: aqua !important;
+.comment-side Button:hover {
+  background-color: #DFDDDD !important;
 }
 
-input::placeholder {
+.comment-side input::placeholder {
   font-size: medium;
 }

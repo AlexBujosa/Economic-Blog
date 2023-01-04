@@ -1,6 +1,6 @@
 import Chip from "../../common/Chip";
 import './styles.css';
-const CoverImage = ({label, title, description, date, choose} ) => {
+const CoverImage = ({label, title, description, date, choose, image} ) => {
     return(
         <div style={{height: '100vh', display:'flex'}}>
             {choose === 1 ? 
@@ -8,7 +8,7 @@ const CoverImage = ({label, title, description, date, choose} ) => {
                 <div className='cover-image'></div>
             ) : 
             (
-                <div className='cover-image-2'></div>
+                <div className='cover-image-2' style={{backgroundImage: `url(${image})`}}></div>
             )}
             <div className='cover'>
                 <div className="cover-economics">

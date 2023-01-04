@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Avatar } from '@material-ui/core';
 import './styles.css';
+import { UserAuth } from '../../../context/AuthContext';
 
 const CommentBox = () => {
+	const {user} = UserAuth();
 	const [formData, setFormData] = useState({});
-
+	const [validToComment, setValidToComment] = useState(false);
 	const postComment = async (e) => {
 		e.preventDefault();
 		await fetch('https://economic-blog-backend.up.railway.app/api/comments', {
@@ -36,9 +38,21 @@ const CommentBox = () => {
 	const resetFormData = () => {
 		setFormData({});
 	};
+	useEffect(()=>{
+		const localAuthToken = localStorage.getItem('authToken');
+		if(
+		  localAuthToken !== undefined &&
+		  localAuthToken !== null &&
+		  localAuthToken !== 'undefined'
+		  ){
+		  setValidToComment(true);
+		}
+	  },[user])
 
 	return (
-		<div>
+		
+		<div className="comment-side">
+			{validToComment? (
 			<form onSubmit={postComment}>
 				<div className="commentBox">
 					<Avatar />
@@ -50,7 +64,15 @@ const CommentBox = () => {
 					/>
 				</div>
 				<Button type="submit">Comment</Button>
-			</form>
+			</form>) : (
+				<div>
+					<br/>
+					<br/>
+					<h2>Comentarios</h2>
+					<br/>
+				</div>
+			)}
+			
 		</div>
 	);
 };

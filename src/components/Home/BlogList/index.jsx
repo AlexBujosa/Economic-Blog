@@ -4,9 +4,9 @@ import './styles.css';
 import { useState } from 'react';
 
 const BlogList = ({ blogs }) => {
-	const [currentMenu, setCurrentMenu] = useState('All');
+	const [currentMenu, setCurrentMenu] = useState('Todo');
 	const options = [
-		'All',
+		'Todo',
 		'Mercado Financiero',
 		'Global',
 		'Políticas Económicas',
@@ -15,7 +15,7 @@ const BlogList = ({ blogs }) => {
 
 	return (
 		<div style={{ marginTop: 120 }}>
-			<b style={{ fontSize: '26px' }}>Popular Topics</b>
+			<b style={{ fontSize: '26px' }}>Temas Populares</b>
 			<br />
 			<br />
 			<ul>
@@ -32,7 +32,7 @@ const BlogList = ({ blogs }) => {
 			<br />
 			<div className="blogList-wrap">
 				{blogs.map((blog) => {
-					if (currentMenu === 'All' || blog.category === currentMenu) {
+					if (currentMenu === 'Todo' || blog.category === currentMenu) {
 						return <BlogItem blog={blog} key={blog._id} />;
 					}
 				})}
