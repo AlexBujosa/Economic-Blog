@@ -1,0 +1,38 @@
+.commentBox {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+input {
+  margin-left: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid lightgray;
+  /*   */
+  width: 100%;
+}
+
+Button {
+  margin-left: 85% !important;
+  border-radius: 20px !important;
+  width: 120px !important;
+}
+
+hr {
+  margin-top: 40px;
+  border-top: 1px solid #e1e5ea;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+Button:hover {
+  background-color: aqua !important;
+}
+
+input::placeholder {
+  font-size: medium;
+}
