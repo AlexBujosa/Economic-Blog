@@ -42,9 +42,9 @@ const Blog = () => {
 						label={blog.category}
 						description={blog.postedBy}
 						title={blog.title}
-						date={blog.created}
+						date={new Date(blog.created).toISOString().split('T')[0]}
 						choose={coverImageInfo.choose}
-						image = {blog.cover}
+						image={blog.cover}
 					/>
 					<div className="blog-wrap">
 						<p style={{ whiteSpace: 'pre-line' }} className="blog-desc">

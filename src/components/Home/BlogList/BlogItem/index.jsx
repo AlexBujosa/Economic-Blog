@@ -18,7 +18,9 @@ const BlogItem = ({
 					<img className="blogItem-cover" src={cover} alt="cover" />
 				</Link>
 			</div>
-			<p className="blogItem-createdAt">{created}</p>
+			<p className="blogItem-createdAt">
+				{new Date(created).toISOString().split('T')[0]}
+			</p>
 			<h3 style={{ zIndex: 1 }}>{title}</h3>
 			<p className="blogItem-desc">{description}</p>
 		</div>
