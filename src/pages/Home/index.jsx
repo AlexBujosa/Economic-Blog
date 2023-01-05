@@ -6,37 +6,16 @@ import Footer from '../../components/Home/Footer';
 import Header from '../../components/Home/Header';
 import blogList from '../../config/data';
 //import SearchBar from '../../components/Home/SearchBar';
-import { UserAuth } from '../../context/AuthContext';
 
 const coverImageInfo = {
 	label: 'Economía',
 	title: 'Blog Económico',
-	discription:
-		'Desarrollado y redactado por Runo Group.',
+	discription: 'Desarrollado y redactado por Runo Group.',
 	date: '22.12.28',
 	choose: 1,
 };
 const Home = () => {
 	const [blogs, setBlogs] = useState([]);
-	const [searchKey, setSearchKey] = useState('');
-
-	// Search submit
-	const handleSearchBar = (e) => {
-		e.preventDefault();
-		handleSearchResults();
-	};
-
-	// Search for blog by category
-	const handleSearchResults = () => {
-		blogs.filter((blog) =>
-			blog.category.toLowerCase().includes(searchKey.toLowerCase().trim())
-		);
-	};
-
-	// Clear search and show all blogs
-	const handleClearSearch = () => {
-		setSearchKey('');
-	};
 
 	useEffect(() => {
 		blogList.then((data) => setBlogs(data));
