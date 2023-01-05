@@ -1,0 +1,18 @@
+.ul-about li {
+    margin-top: 10px;
+    width: 210px;
+    display: flex;
+    position: relative;
+}
+
+.ul-about li div p {
+    margin-left: 0px;
+}
+
+.ul-about li div {
+    width: fit-content;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+
+}
