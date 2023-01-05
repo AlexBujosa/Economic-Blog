@@ -42,7 +42,7 @@ const Login = () => {
 			localAuthToken !== null &&
 			localAuthToken !== 'undefined'
 		) {
-			window.location.href = 'https://economic-blog.up.railway.app/';
+			window.location.href = 'https://economic-blog-oduranc.vercel.app/';
 		}
 	}, [user]);
 	return (

@@ -7,17 +7,17 @@ const NavBar = () => {
 	const urls = [
 		{
 			text: 'Home',
-			url: 'https://economic-blog.up.railway.app/',
+			url: 'https://economic-blog-oduranc.vercel.app/',
 			direct: '/',
 		},
 		{
 			text: 'About Us',
-			url: 'https://economic-blog.up.railway.app/about',
+			url: 'https://economic-blog-oduranc.vercel.app/about',
 			direct: '/about',
 		},
 		{
 			text: 'Log In',
-			url: 'https://economic-blog.up.railway.app/logIn',
+			url: 'https://economic-blog-oduranc.vercel.app/logIn',
 			direct: '/logIn',
 		},
 	];
