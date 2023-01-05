@@ -9,11 +9,11 @@ import blogList from '../../config/data';
 import { UserAuth } from '../../context/AuthContext';
 
 const coverImageInfo = {
-	label: 'Economics',
-	title: 'Richird Norton photorealistic rendering as real photos',
+	label: 'Economía',
+	title: 'Blog Económico',
 	discription:
-		'Pogressively incentivize cooperative systems through technicall sound functionalities. The credibly productivte seamless data.',
-	date: '08.08.10',
+		'Desarrollado y redactado por Runo Group.',
+	date: '22.12.28',
 	choose: 1,
 };
 const Home = () => {
