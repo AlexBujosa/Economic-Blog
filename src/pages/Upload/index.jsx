@@ -33,7 +33,7 @@ const Upload = () => {
 		)
 			.then((res) => res.json())
 			.then(() => {
-				window.location.href = 'http://localhost:3000/';
+				window.location.href = 'https://economic-blog.up.railway.app/';
 			});
 	};
 

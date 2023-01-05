@@ -1,4 +1,4 @@
-export const Logout = () =>{
-    localStorage.clear();
-    window.location.href="http://localhost:3000/login";
-}
+export const Logout = () => {
+	localStorage.clear();
+	window.location.href = 'https://economic-blog.up.railway.app/login';
+};

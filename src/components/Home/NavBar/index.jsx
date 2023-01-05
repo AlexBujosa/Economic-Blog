@@ -7,17 +7,17 @@ const NavBar = () => {
 	const urls = [
 		{
 			text: 'Home',
-			url: 'http://localhost:3000/',
+			url: 'https://economic-blog.up.railway.app/',
 			direct: '/',
 		},
 		{
 			text: 'About Us',
-			url: 'http://localhost:3000/about',
+			url: 'https://economic-blog.up.railway.app/about',
 			direct: '/about',
 		},
 		{
 			text: 'Log In',
-			url: 'http://localhost:3000/logIn',
+			url: 'https://economic-blog.up.railway.app/logIn',
 			direct: '/logIn',
 		},
 	];
